@@ -23,7 +23,7 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:28.0.0'
 
     implementation project(':abase')
-    implementation project(':libA')
+    implementation project(':libAapi')
     implementation project(':libB')
     annotationProcessor 'com.google.dagger:dagger-compiler:2.21'
     testImplementation 'junit:junit:4.12'

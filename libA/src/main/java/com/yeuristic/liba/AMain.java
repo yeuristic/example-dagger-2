@@ -9,6 +9,6 @@ public class AMain {
     AProvider mAProvider;
 
     public AMain() {
-        ADIManager.getaSubComponent().inject(this);
+        ADIManager.getaComponent().inject(this);
     }
 }

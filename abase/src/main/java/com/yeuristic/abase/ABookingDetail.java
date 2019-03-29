@@ -1,4 +1,4 @@
-package com.yeuristic.liba;
+package com.yeuristic.abase;
 
 public class ABookingDetail {
 }

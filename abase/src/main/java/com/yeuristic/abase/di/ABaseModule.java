@@ -1,9 +1,10 @@
-package com.yeuristic.liba.di;
+package com.yeuristic.abase.di;
 
+
+import com.yeuristic.abase.ABookingDetail;
+import com.yeuristic.abase.AListener;
+import com.yeuristic.abase.AStatefulProvider;
 import com.yeuristic.base.ApplicationScope;
-import com.yeuristic.liba.ABookingDetail;
-import com.yeuristic.liba.AListener;
-import com.yeuristic.liba.AStatefulProvider;
 
 import dagger.Module;
 import dagger.Provides;

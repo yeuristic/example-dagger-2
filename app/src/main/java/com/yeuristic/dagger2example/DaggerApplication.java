@@ -2,8 +2,8 @@ package com.yeuristic.dagger2example;
 
 import android.app.Application;
 
+import com.yeuristic.abase.AListener;
 import com.yeuristic.liba.di.ADIManager;
-import com.yeuristic.liba.AListener;
 import com.yeuristic.libb.BDIManager;
 
 import javax.inject.Inject;

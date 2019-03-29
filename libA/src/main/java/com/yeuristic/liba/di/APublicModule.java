@@ -1,7 +1,7 @@
 package com.yeuristic.liba.di;
 
 import com.yeuristic.base.AService;
-import com.yeuristic.base.ApplicationScope;
+import com.yeuristic.base.ScreenPublicScope;
 import com.yeuristic.liba.AServiceImpl;
 
 import dagger.Binds;
@@ -14,7 +14,7 @@ public abstract class APublicModule {
     @Binds
     abstract AService getService(AServiceImpl aServiceImpl);
 
-    @ApplicationScope
+    @ScreenPublicScope
     @Provides
     static AServiceImpl getServiceImpl() {
         return new AServiceImpl();

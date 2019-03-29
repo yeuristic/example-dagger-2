@@ -1,11 +1,11 @@
 package com.yeuristic.liba.di;
 
-import com.yeuristic.base.ApplicationScope;
+import com.yeuristic.base.ScreenPublicScope;
 import com.yeuristic.libaapi.APublicComponent;
 
 import dagger.Component;
 
-@ApplicationScope
+@ScreenPublicScope
 @Component(modules = {APublicModule.class})
 public interface APublicComponentImpl extends APublicComponent {
 }

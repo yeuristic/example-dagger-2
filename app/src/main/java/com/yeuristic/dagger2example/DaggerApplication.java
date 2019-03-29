@@ -6,6 +6,7 @@ import com.yeuristic.abase.AListener;
 import com.yeuristic.base.Components;
 import com.yeuristic.liba.di.AComponentFactory;
 import com.yeuristic.libaapi.APublicComponent;
+import com.yeuristic.libaapi.APublicDIManager;
 import com.yeuristic.libb.BDIManager;
 
 import javax.inject.Inject;
@@ -23,12 +24,13 @@ public class DaggerApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        mApplicationComponent = DaggerApplicationComponent.builder().build();
-        mApplicationComponent.inject(this);
-        BDIManager.setbSubComponent(mApplicationComponent.getBSubComponent());
 
         //ComponentFactories
         Components.MAP.put(APublicComponent.class.getSimpleName(), new AComponentFactory());
+
+        mApplicationComponent = DaggerApplicationComponent.builder().aPublicComponent(APublicDIManager.getPublicComponent()).build();
+        mApplicationComponent.inject(this);
+        BDIManager.setbSubComponent(mApplicationComponent.getBSubComponent());
     }
 
     public ApplicationComponent getApplicationComponent() {

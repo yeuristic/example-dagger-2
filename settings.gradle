@@ -1,1 +1,1 @@
-include ':app', ':libA', ':base', ':libB', ':libAapi', ':abase'
+include ':app', ':libA', ':base', ':libB', ':libAapi', ':abase', ':bridge'

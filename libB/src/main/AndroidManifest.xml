@@ -3,8 +3,6 @@
           package="com.yeuristic.libb">
 
     <application>
-        <activity android:name=".BMainActivity">
-        </activity>
     </application>
 
 </manifest>

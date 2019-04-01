@@ -4,5 +4,5 @@ import dagger.Subcomponent;
 
 @Subcomponent
 public interface BSubComponent {
-    void inject(BMainActivity bMainActivity);
+    void inject(BMain bMain);
 }
